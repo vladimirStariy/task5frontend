@@ -4,7 +4,7 @@ import { IPerson, IPersonRequest } from '../models/IPerson';
 export const personAPI = createApi({
     reducerPath: 'personAPI',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5000/',
+        baseUrl: 'https://real-teal-puffer-hem.cyclic.app/',
     }),
     endpoints: (builder) => ({
         getPersons: builder.mutation<IPerson[], IPersonRequest>({
